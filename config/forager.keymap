@@ -25,6 +25,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             retro-tap;
+            hold-while-undecided;
             bindings = <&kp>, <&kp>;
         };
         rhm: right_homerow_mods {
@@ -34,6 +35,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             retro-tap;
+            hold-while-undecided;
             bindings = <&kp>, <&kp>;
         };
     };
