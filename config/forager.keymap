@@ -6,7 +6,7 @@
 #include <behaviors/rgbled_widget.dtsi>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1800
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 60
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE  0
