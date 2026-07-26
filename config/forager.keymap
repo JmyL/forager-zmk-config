@@ -46,10 +46,6 @@
         };
     };
 
-    &soft_off {
-        hold-time-ms = <3000>;
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -124,6 +120,11 @@
         };
     };
 };
+
+&soft_off {
+    hold-time-ms = <3000>;
+};
+
 &lt {
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
