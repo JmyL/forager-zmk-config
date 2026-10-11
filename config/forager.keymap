@@ -15,6 +15,7 @@
 #define SHIFT 3
 #define MOV   4
 #define CFG   5
+#define CFG2  6
 
 / {
     behaviors {
@@ -52,13 +53,13 @@
         left_thumb_cfg {
             timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&mo CFG>;
+            bindings = <&mo CFG2>;
         };
 
         right_thumb_cfg {
             timeout-ms = <50>;
             key-positions = <32 33>;
-            bindings = <&mo CFG>;
+            bindings = <&mo CFG2>;
         };
     };
 
@@ -116,6 +117,15 @@
             &kp F11         &kp F12         &none           &ind_bat        &soft_off                                       &soft_off       &ind_bat        &kp C_BRI_DN    &kp C_BRI_UP    &studio_unlock
             &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &none           &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP    &none
                                                                             &trans          &trans          &trans          &trans
+            >;
+        };
+
+        cfg2 {
+            bindings = <
+            &none           &none           &none           &none           &none                                           &none           &none           &none           &none           &none
+            &none           &none           &none           &ind_bat        &soft_off                                       &soft_off       &ind_bat        &none           &none           &none
+            &none           &none           &none           &none           &none                                           &none           &none           &none           &none           &none
+                                                                            &none           &none           &none           &none
             >;
         };
     };
